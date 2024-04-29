@@ -13,9 +13,14 @@ interface Props {
 }
 
 const ExpenseList = ({ expense, onDelete }: Props) => {
-  if (expense.length === 0) return null;
+  if (expense.length === 0)
+    return (
+      <p className="mt-5 fw-semibold font-monospace text-center bg-primary rounded py-2 text-white">
+        There is no list on this category
+      </p>
+    );
   return (
-    <table className="table table-bordered">
+    <table className="table table-bordered rounded">
       <thead>
         <tr>
           <th>Description</th>
