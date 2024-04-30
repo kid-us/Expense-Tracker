@@ -1,3 +1,3 @@
 # Expense-Tracker
 
-A simple Expense Tracker, 
+A simple Expense Tracker.
