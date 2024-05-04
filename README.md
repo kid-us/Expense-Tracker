@@ -1,3 +1,3 @@
 # Expense-Tracker
 
-A simple React, Typescript => Expense Tracker project.
+A simple React, Typescript Expense Tracker project.
