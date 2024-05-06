@@ -23,11 +23,11 @@ function App() {
   return (
     <>
       <div className="container mt-5 pt-4 font-monospace">
-        <p className="fw-semibold font-monospace fs-3 ms-5 ps-4 text-white">
+        <p className="fw-semibold font-monospace fs-3 ms-lg-5 ps-4 text-white">
           Expense Tracker
         </p>
         <div className="p-5 row justify-content-center fw-semibold">
-          <div className="col-5 shadow rounded bg-white p-5 me-4">
+          <div className="col-lg-5 col-md-6 col-12 shadow rounded bg-white p-5 me-4">
             <div className="mb-5">
               <ExpenseForm
                 onSubmit={(data) =>
@@ -39,7 +39,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-6 rounded bg-white shadow p-5">
+          <div className="col-lg-6 col-md-6 col-12 rounded bg-white shadow p-5 mt-lg-0 mt-4">
             <div className="mb-3">
               <p>Filter Categories</p>
               <ExpenseFilter
