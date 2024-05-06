@@ -35,7 +35,7 @@ const ExpenseList = ({ expense, onDelete }: Props) => {
             <td>{expense.description}</td>
             <td>{expense.amount}</td>
             <td>{expense.category}</td>
-            <td>
+            <td className="text-center">
               <button
                 className="btn btn-outline-danger"
                 onClick={() => onDelete(expense.id)}
