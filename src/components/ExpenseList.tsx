@@ -22,11 +22,11 @@ const ExpenseList = ({ expense, onDelete }: Props) => {
   return (
     <table className="table table-bordered rounded">
       <thead>
-        <tr>
+        <tr className="text-uppercase text-center">
           <th>Description</th>
           <th>Amount</th>
           <th>Category</th>
-          <th></th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
