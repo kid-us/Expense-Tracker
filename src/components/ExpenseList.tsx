@@ -20,43 +20,46 @@ const ExpenseList = ({ expense, onDelete }: Props) => {
       </p>
     );
   return (
-    <table className="table table-bordered rounded">
-      <thead>
-        <tr className="text-uppercase text-center">
-          <th>Description</th>
-          <th>Amount</th>
-          <th>Category</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        {expense.map((expense) => (
-          <tr key={expense.id}>
-            <td>{expense.description}</td>
-            <td>{expense.amount}</td>
-            <td>{expense.category}</td>
-            <td className="text-center">
-              <button
-                className="btn btn-outline-danger"
-                onClick={() => onDelete(expense.id)}
-              >
-                Delete
-              </button>
-            </td>
+    <div className="table-responsive">
+      <table className="table table-bordered rounded caption-top">
+        <caption>List of Expenses</caption>
+        <thead>
+          <tr className="text-uppercase text-center">
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Action</th>
           </tr>
-        ))}
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>
-            ${expense.reduce((acc, expenses) => expenses.amount + acc, 0)}
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tfoot>
-    </table>
+        </thead>
+        <tbody className="table-group-divider">
+          {expense.map((expense) => (
+            <tr key={expense.id}>
+              <td>{expense.description}</td>
+              <td>{expense.amount}</td>
+              <td>{expense.category}</td>
+              <td className="text-center">
+                <button
+                  className="btn btn-outline-danger"
+                  onClick={() => onDelete(expense.id)}
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>
+              ${expense.reduce((acc, expenses) => expenses.amount + acc, 0)}
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   );
 };
 

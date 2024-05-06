@@ -26,8 +26,8 @@ function App() {
         <p className="fw-semibold font-monospace fs-3 ms-lg-5 ps-4 text-white">
           Expense Tracker
         </p>
-        <div className="p-5 row justify-content-center fw-semibold">
-          <div className="col-lg-5 col-md-6 col-12 shadow rounded bg-white p-5 me-4">
+        <div className="p-lg-5 row justify-content-center fw-semibold">
+          <div className="col-lg-5 col-md-5 col-12 shadow rounded bg-white p-5 me-4">
             <div className="mb-5">
               <ExpenseForm
                 onSubmit={(data) =>
