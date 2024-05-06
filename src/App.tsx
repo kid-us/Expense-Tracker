@@ -22,12 +22,12 @@ function App() {
 
   return (
     <>
-      <div className="container mt-5 pt-4 font-monospace">
-        <p className="fw-semibold font-monospace fs-3 ms-lg-5 ps-4 text-white">
+      <div className="container mt-lg-5 pt-lg-4 pt-5 font-monospace">
+        <p className="fw-semibold font-monospace fs-3 ms-lg-5 ps-lg-4 ps-2 text-white">
           Expense Tracker
         </p>
-        <div className="p-lg-5 row justify-content-center fw-semibold">
-          <div className="col-lg-5 col-md-5 col-12 shadow rounded bg-white p-5 me-4">
+        <div className="p-lg-5 p-3 row justify-content-center fw-semibold">
+          <div className="col-lg-5 col-md-5 col-12 shadow rounded bg-white p-5 me-lg-4">
             <div className="mb-5">
               <ExpenseForm
                 onSubmit={(data) =>
@@ -39,7 +39,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-12 rounded bg-white shadow p-5 mt-lg-0 mt-4">
+          <div className="col-lg-6 col-md-6 col-12 rounded bg-white shadow p-lg-5 p-3 mt-lg-0 mt-4">
             <div className="mb-3">
               <p>Filter Categories</p>
               <ExpenseFilter
