@@ -45,7 +45,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
         <input
           {...register("description")}
           type="text"
-          className="form-control"
+          className="form-control shadow"
           id="description"
         />
         {errors.description && (
@@ -59,7 +59,7 @@ const ExpenseForm = ({ onSubmit }: Props) => {
         <input
           {...register("amount", { valueAsNumber: true })}
           type="number"
-          className="form-control"
+          className="form-control shadow"
           id="amount"
         />
         {errors.amount && (
@@ -70,7 +70,11 @@ const ExpenseForm = ({ onSubmit }: Props) => {
         <label htmlFor="category" className="form-label">
           Category
         </label>
-        <select {...register("category")} id="category" className="form-select">
+        <select
+          {...register("category")}
+          id="category"
+          className="form-select shadow"
+        >
           <option value=""></option>
           {categories.map((category) => (
             <option value={category} key={category}>
