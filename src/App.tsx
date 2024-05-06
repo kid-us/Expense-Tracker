@@ -10,7 +10,6 @@ function App() {
   const [expenses, setExpenses] = useState([
     { id: 1, description: "Music", amount: 100, category: "Entertainment" },
     { id: 2, description: "Fruits", amount: 100, category: "Groceries" },
-    // { id: 3, description: "Lorem", amount: 100, category: "Utilities" },
   ]);
 
   const handleDelete = (id: number) => {
